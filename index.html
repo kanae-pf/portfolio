@@ -40,27 +40,29 @@
       color: #333;
       font-weight: bold;
     }
-
+    
     .hero {
       text-align: center;
       padding: 60px 20px;
     }
 
-    .hero h2 {
-      font-size: 2rem;
-      margin-bottom: 10px;
+    .hero img {
+      max-width: 100%;
+      height: auto;
     }
 
     .works {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
       padding: 40px;
+      max-width: 800px;
+      margin: 0 auto;
     }
 
     .work-item {
       border: 1px solid #ddd;
-      padding: 10px;
+      padding: 20px;
       background: #f9f9f9;
     }
 
@@ -94,24 +96,27 @@
     </nav>
   </header>
 
+  <section class="hero">
+    <!-- ここに画像を表示 -->
+    <img src="https://github.com/kanae-pf/portfolio/blob/main/top.jpg?raw=true" alt="シンプルに、作品を魅せる" />
+  </section>
+
+  <section class="works">
+    <div class="work-item">
+      <img src="assets/images/work01_thumb.jpg" alt="リアルバイアイテム特集" />
+      <p>リアルバイアイテム特集 LP</p>
+    </div>
+    <div class="work-item">
+      <img src="assets/images/work02_thumb.jpg" alt="メルマガ" />
+      <p>メルマガ デザイン</p>
+    </div>
+    <div class="work-item">
+      <img src="assets/images/work03_thumb.jpg" alt="新作ドレスLP" />
+      <p>新作ドレス LP</p>
+    </div>
+    <!-- 他の作品も同様に追加可能 -->
+  </section>
   
-  
-  <!---- ここから ---->	
-
-
-
-
-
-<h2 class="mainTTL fadeInBlock">
-
-
-    
-<div class="itemlist0">
-   <div class="itemlist0_1in ">
-  <img src="https://github.com/kanae-pf/portfolio/blob/main/top.jpg?raw=true"  width="100%">
-     </div>
-             
-</div>
 
   
     <style>
@@ -201,118 +206,10 @@ bottom: 70px;
 right: -10px;
 padding: 6px 20px;
 }
-
+</style>
      
-   .itemlist0 {  
-     background-color: #f7f3e7;
-      background-size: 100%;
-     background-repeat:repeat;
-     /* ボックス配置指定 */
-  position: relative;
-  margin: 0 auto;
-  text-align: center;
-  /* ボックスサイズ指定 */
-  width: 390px;
-  height:900px;
-     }
-     
-     itemlist0_1in{
-  /* ボックス配置指定 */
-  position: absolute;
-  top: 0px;
-     text-align: center;
-     }
- 
-     
-  
-     
-     
- .itemlist1 {  
-     background-color: #f7f3e7;
-      background-size: 100%;
-     background-repeat:repeat;
-     /* ボックス配置指定 */
-  position: relative;
-  margin: 0 auto;
-  text-align: center;
-  /* ボックスサイズ指定 */
-  width: 390px;
-  height: 1240px;
-     
-     }
-     
-.itemlist1_1_in {
-  /* ボックス配置指定 */
-  position: relative;
-  top: 70px;
-     right:5px;
-     text-align: center;
-}
-
-  .itemlist1_1_img {  
-     width: 350px;
-  margin: auto;
-  display: block;
-}
-     .itemlist1_2_in {
-  /* ボックス配置指定 */
-  position: absolute;
-  top: 620px;
-     right:20px;
-     text-align: center;
-     }
-     
-  .itemlist1_2_img {  
-     width: 250px;
-  margin: auto;
-  display: block;
-}
    
 
- .itemlist1_moji_in {
-  /* ボックス配置指定 */
-  position: absolute;
-  top: 990px;
-     left: 120px;
-     text-align: center;
-     }  
-     
-     
-
-  <!---------- ドレス1　 ---------->  
-<div class="itemlist1">    
-     <div class="itemlist1_1_in scroll_up">
-              <a href="https://www.aidmaxdress.com/view/item/000000001385?utm_source=250418spring">
-                 <img src="https://gigaplus.makeshop.jp/aidmax00/img/freepage/25spring/RN0097BK-1.jpg" class="itemlist1_1_img"></a>
-                 </div>
-<div class="itemlist1_2_in scroll_up">
-              <a href="https://www.aidmaxdress.com/view/item/000000001385?utm_source=250418spring">
-                 <img src="https://gigaplus.makeshop.jp/aidmax00/img/freepage/25spring/RN0097BK-2.jpg" class="itemlist1_2_img"width="300">
-            </a></div>
-
-    
-<div class="itemlist1_moji_in ">
-<p><span class="txt_border">
-    <a href="https://www.aidmaxdress.com/view/item/000000001385?utm_source=250418spring">
-<font face="serif" color=#3e3e3e> 
-   flower print one-piece&nbsp; &yen;25,080
-</font></a></span>
-</div></div></section>
-
-  <section class="works">
-    <div class="work-item">
-      <img src="assets/images/sample01.jpg" alt="作品1">
-      <p>LP制作：2024年春コレクション</p>
-    </div>
-    <div class="work-item">
-      <img src="assets/images/sample02.jpg" alt="作品2">
-      <p>ブランドメルマガデザイン</p>
-    </div>
-    <div class="work-item">
-      <img src="assets/images/sample03.jpg" alt="作品3">
-      <p>ECサイトバナー</p>
-    </div>
-  </section>
 
   <footer>
     &copy; 2025 My Portfolio
