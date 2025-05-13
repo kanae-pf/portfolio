@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kanae　Ikeda</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Kanae　Ikeda</title>
   <style>
     body {
       margin: 0;
@@ -12,15 +12,6 @@
       color: #004aad;
     }
 
-
-      
-      @font-face {
-    font-family: 'IPAexMincho';
-    src: url('/fonts/ipaexm.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-        }
-      
     header {
       padding: 20px 40px;
       display: flex;
@@ -40,7 +31,7 @@
       color: #333;
       font-weight: bold;
     }
-    
+
     .hero {
       text-align: center;
       padding: 60px 20px;
@@ -86,8 +77,6 @@
     }
   </style>
 </head>
-
-  
 <body>
   <header>
     <h1>KANAE IKEDA</h1>
@@ -106,7 +95,7 @@
   <section class="works">
     <div class="work-item">
       <img src="https://gigaplus.makeshop.jp/aidmax00/img/bannar/250509_realbuy4_sp.jpg" alt="リアルバイアイテム特集" />
-      <p>REAL BUY ITEM 特集 LP</p>
+      <p>リアルバイアイテム特集 LP</p>
     </div>
     <div class="work-item">
       <img src="assets/images/work02_thumb.jpg" alt="メルマガ" />
@@ -118,99 +107,9 @@
     </div>
     <!-- 他の作品も同様に追加可能 -->
   </section>
-  
-
-  
-    <style>
-      
-
-     
-  /*----------------------------
-scroll_up ｜下から上へ出現
-----------------------------*/   
-     .scroll_up{
- transition: 0.8s ease-in-out;
-  transform: translateY(30px);
-  opacity: 0;
-}
-     .scroll_up.on {
-  transform: translateY(0);
-  opacity: 1.0;
-}      
-/*----------------------------
-scroll_left ｜左から出現
-----------------------------*/
-.scroll_left {
-    -webkit-transition: 0.8s ease-in-out;
-    -moz-transition: 0.8s ease-in-out;
-    -o-transition: 0.8s ease-in-out;
-    transition: 0.8s ease-in-out;
-    transform: translateX(-8px);
-    opacity: 0;
-    filter: alpha(opacity=0);
-    -moz-opacity: 0;
-}
-.scroll_left.on {
-    opacity: 1.0;
-    filter: alpha(opacity=100);
-    -moz-opacity: 1.0;
-    transform: translateX(0);
-}
-
-/*----------------------------
-scroll_right ｜右から出現
-----------------------------*/
-.scroll_right {
-    -webkit-transition: 0.8s ease-in-out;
-    -moz-transition: 0.8s ease-in-out;
-    -o-transition: 0.8s ease-in-out;
-    transition: 0.8s ease-in-out;
-    transform: translateX(30px);
-    opacity: 0;
-    filter: alpha(opacity=0);
-    -moz-opacity: 0;
-}
-.scroll_right.on {
-    opacity: 1.0;
-    filter: alpha(opacity=100);
-    -moz-opacity: 1.0;
-    transform: translateX(0);
-}
-     
-     
-
-     .fixed_btn { 
-position: fixed;
-bottom: 70px;
-right: -10px;
-padding: 6px 20px;
-}
-</style>
-     
-   
-
 
   <footer>
     &copy; 2025 My Portfolio
   </footer>
-
-
-      <script>
-     //scroll_effect
-$(window).scroll(function () {
-  var scrollAnimationElm = document.querySelectorAll('.scroll_up , .scroll_left , .scroll_right');
-  var scrollAnimationFunc = function () {
-    for (var i = 0; i < scrollAnimationElm.length; i++) {
-      var triggerMargin = 150;
-      if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + triggerMargin) {
-        scrollAnimationElm[i].classList.add('on');
-      }
-    }
-  }
-  window.addEventListener('load', scrollAnimationFunc);
-  window.addEventListener('scroll', scrollAnimationFunc);
-});    
-    </script>     
-    
 </body>
 </html>
