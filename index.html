@@ -76,6 +76,19 @@
       font-size: 0.8rem;
       color: #aaa;
     }
+    #loop{
+  animation:rotate 8s infinite;
+  animation-timing-function:linear;
+}
+@keyframes rotate{
+  0%{
+    transform:rotate(0);
+  }
+  100%{
+    transform:rotate(360deg);
+  }
+}
+
   </style>
 </head>
 <body>
@@ -90,8 +103,26 @@
 
   <section class="hero">
     <!-- ここに画像を表示 -->
+    
     <img src="https://github.com/kanae-pf/portfolio/blob/main/top.jpg?raw=true" alt="シンプルに、作品を魅せる" />
+    <div data-s-75017bac-208e-47bc-ad4b-5a2464f3de79="" class="frame sd"><style>
+#loop-1{
+  animation:rotate 6s infinite;
+  animation-timing-function:linear;
+  animation-direction: reverse;
+}
+@keyframes rotate{
+  0%{
+    transform:rotate(0);
+  }
+  100%{
+    transform:rotate(360deg);
+  }
+}
+</style></div>
+    <img id="loop" data-s-0a2525fb-3c61-4c87-9288-0dbdfa56b4dc="" class="sd" alt="" src="https://github.com/kanae-pf/portfolio/blob/main/works/s-1430x1340_v-fms_webp_151419b3-93e2-4b68-bd15-d575040f7924_small.webp">
   </section>
+
 
   <section class="works">
     <h1><a name="works">WORKS</h1>
